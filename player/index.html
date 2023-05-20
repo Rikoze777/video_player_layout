@@ -64,7 +64,7 @@
     .video_progress {
       display: flex;
       flex-direction: row;
-      background-color: grey;
+      background-color: white;
       height: 5px;
       border-radius: 20px;
       margin-left: 10px;
@@ -73,6 +73,7 @@
       align-items: center;
     }
     .video_progress:hover .dot{
+      background-color: blue;
       opacity: 1
     }
     .video_progress_bar {
@@ -83,12 +84,13 @@
     }
     .dot {
       transition-duration: 300ms;
+      transition-timing-function: ease-in;
       border-style: solid;
       opacity: 0;
-      border-width: 5px;
+      border-width: 2px;
       border-color: white;
-      height: 12px;
-      width: 12px;
+      height: 8px;
+      width: 8px;
       background-color: red;
       border-radius: 50%;
       display: inline-block;
@@ -114,7 +116,7 @@
 
       <div class="player-time-progress">
         <div class="js-current-time timer"></div>
-        <div class="js-progress video_progress"">
+        <div class="js-progress video_progress">
           <div class="js-progress-slider video_progress_bar"></div>
           <span class="dot"></span>
         </div>
