@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="./stattic/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="./stattic/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
   <style>
     .player__basis {
       display: flex;
@@ -35,6 +38,47 @@
     .space {
       flex-grow: 1;
     }
+    .timer{
+        color: white;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+      }
+      .progres-bar{
+        width: 773px;
+        height: 55px;
+      }
+      .progress-slider{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: red;
+      }
+      .player-time-progress{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        align-items: center;
+      }
+    .video_progress {
+      display: flex;
+      flex-direction: row;
+      background-color: grey;
+      height: 5px;
+      border-radius: 20px;
+      margin-left: 10px;
+      flex-grow: 1;
+      margin-right: 10px;
+      align-items: center;
+    }
+    .video_progress_bar {
+      background-color: red;
+      width: 120px;
+      height: 5px;
+      border-radius: 30px;
+    }
+
   </style>
 </head>
 <body>
@@ -53,10 +97,19 @@
       <button class="player__button js-volume-button" hidden>
         <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
-      <div class="space"></div>
+
+      <div class="player-time-progress">
+        <div class="js-current-time timer"></div>
+        <div class="js-progress video_progress"">
+          <div class="js-progress-slider video_progress_bar"></div>
+        </div>
+        <div class="js-duration timer"></div>
+      </div>
+
       <button class="player__button js-fullscreen-button">
         <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
+
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
