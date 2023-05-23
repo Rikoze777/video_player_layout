@@ -24,19 +24,11 @@
     width: 27px;
     color: white;
   }
-  .space {
-    flex-grow: 1;
-  }
   .timer{
     color: white;
-    font-size: 22px;
     display: flex;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-  }
-  .progres-bar{
-    width: 773px;
-    height: 55px;
   }
   .progress-slider{
     display: flex;
