@@ -10,7 +10,7 @@
   }
   .player__control {
     background-color: black;
-    line-height: 1.5;
+    line-height: 1;
     display: flex;
   }
   .player__button {
@@ -18,10 +18,9 @@
     cursor: pointer;
     background-color: transparent;
     font-size: large;
-    padding: 5px;
-    margin: 5px;
-    height: 35px;
-    width: 27px;
+    margin: 4px;
+    height: 36px;
+    width: 29px;
     color: white;
   }
   .timer{
@@ -48,7 +47,7 @@
     background-color: transparent;
     height: 5px;
     border-radius: 20px;
-    margin-left: 10px;
+    margin-left: 11px;
     flex-grow: 1;
     margin-right: 10px;
     align-items: center;
